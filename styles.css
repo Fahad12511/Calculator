@@ -1,0 +1,26 @@
+
+#cal_border{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 240px;
+    height: 305px;
+    
+}
+#display-text{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 50px;
+    width: 90%;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.button_container{
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+    
+}

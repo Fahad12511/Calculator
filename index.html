@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="cal_border">
+      <input type="text" id="display-text" readonly />
+      <div class="buttons">
+        <button
+          class="button_container"
+          onclick="currentvalue= '';document.querySelector('#display-text').value=currentvalue"
+        >
+          C
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '1';document.querySelector('#display-text').value=currentvalue"
+        >
+          1
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '4';document.querySelector('#display-text').value=currentvalue"
+        >
+          2
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '3';document.querySelector('#display-text').value=currentvalue"
+        >
+          3
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '+';document.querySelector('#display-text').value=currentvalue"
+        >
+          +
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '4';document.querySelector('#display-text').value=currentvalue"
+        >
+          4
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '5';document.querySelector('#display-text').value=currentvalue"
+        >
+          5
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '6';document.querySelector('#display-text').value=currentvalue"
+        >
+          6
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '-';document.querySelector('#display-text').value=currentvalue"
+        >
+          -
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '7';document.querySelector('#display-text').value=currentvalue"
+        >
+          7
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '8';document.querySelector('#display-text').value=currentvalue"
+        >
+          8
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '9';document.querySelector('#display-text').value=currentvalue"
+        >
+          9
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '*';document.querySelector('#display-text').value=currentvalue"
+        >
+          *
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '/';document.querySelector('#display-text').value=currentvalue"
+        >
+          /
+        </button>
+        <button
+          class="button_container"
+          onclick="currentvalue=currentvalue + '0';document.querySelector('#display-text').value=currentvalue"
+        >
+          0
+        </button>
+        <button
+          class="button_container"
+          onclick="
+          
+          currentvalue=eval(currentvalue);document.querySelector('#display-text').value=currentvalue"
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <script>
+      let currentvalue = "";
+      document.querySelector("#display-text").value = currentvalue;
+    </script>
+  </body>
+</html>
